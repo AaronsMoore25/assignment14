@@ -1,0 +1,16 @@
+img {
+    border:1px solid black;
+    width:300px;
+    height:300px;
+}
+
+#mainSection{
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (min-width: 768px){
+    
+    #mainSection {
+        flex-direction: column;
+    }
+}
