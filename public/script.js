@@ -1,6 +1,6 @@
 const getCrafts = async() => {
-    const url = "http://localhost:3000/api/crafts";
-
+    //const url = "http://localhost:3000/api/crafts";
+    const url = "https://assignment14-2-75ar.onrender.com/api/crafts";
     try {
         const response = await fetch(url);
         return response.json();
