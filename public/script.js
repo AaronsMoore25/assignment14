@@ -19,7 +19,6 @@ const showCrafts = async() => {
 };
 
 const getCraftSection = (craft) => {
-    const mainPageSection = document.createElement("section");
     const mainSection = document.createElement("section");
     mainSection.id = "mainSection";
     const img = document.createElement("img");
@@ -27,7 +26,7 @@ const getCraftSection = (craft) => {
     mainSection.append(img);
 
     mainSection.onclick = (e) => {
-        console.log("the onclick is working");
+        //console.log("the onclick is working");
         document.getElementById("dialog").style.display = "block";
 
         const details = document.getElementById("dialog-details");
@@ -40,22 +39,22 @@ const getCraftSection = (craft) => {
         myImage.src = "http://localhost:3000/images/" + craft.image;
         myImage.id = "myImage";
         imageDetails.append(myImage);
-        console.log(myImage);
+        //console.log(myImage);
 
         const myName = document.createElement("h1");
         myName.innerHTML = craft.name;
         details.append(myName);
-        console.log(myName);
+        //console.log(myName);
 
         const myDescription = document.createElement("p");
         myDescription.innerHTML = craft.description;
         details.append(myDescription);
-        console.log(myDescription);
+        //console.log(myDescription);
 
         const mySupplies = document.createElement("p");
         mySupplies.innerHTML = "Supplies: " + craft.supplies;
         details.append(mySupplies);
-        console.log(mySupplies);
+        //console.log(mySupplies);
         
     };
 
