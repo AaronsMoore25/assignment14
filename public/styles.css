@@ -4,13 +4,36 @@ img {
     height:300px;
 }
 
+#main-header {
+    text-align: center;
+    background: gray;
+    color: #0c343d;
+    padding: 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.headerClass {
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 #mainSection{
+    margin: 0px; 
+    padding: 0px;
+}
+
+#myImage {
+    padding: 30px;
     display: flex;
-    flex-direction: row;
 }
 @media only screen and (min-width: 768px){
     
-    #mainSection {
-        flex-direction: column;
+    #mainSection{
+        display: flex;
+    }
+    #dialog-content{
+        display: flex;
     }
 }
