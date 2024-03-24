@@ -23,7 +23,7 @@ const getCraftSection = (craft) => {
     mainSection.id = "mainSection";
     const img = document.createElement("img");
     //img.src="http://localhost:3000/images/" + craft.image;
-    img.src = "https://assignment14-2-75ar.onrender.com/images" + craft.image;
+    img.src = "https://assignment14-2-75ar.onrender.com/images/" + craft.image;
     mainSection.append(img);
 
     mainSection.onclick = (e) => {
@@ -37,7 +37,7 @@ const getCraftSection = (craft) => {
 
         const myImage = document.createElement("img");
         myImage.src = "";
-        myImage.src = "https://assignment14-2-75ar.onrender.com/images" + craft.image;
+        myImage.src = "https://assignment14-2-75ar.onrender.com/images/" + craft.image;
         myImage.id = "myImage";
         imageDetails.append(myImage);
         //console.log(myImage);
